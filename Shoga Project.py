@@ -73,13 +73,13 @@ def get_bot_response(user_input):
 
 def send_message(event=None):
     user_input = user_input_entry.get()
-    chat_display.configure(state=tk.NORMAL)  # Torna o chat display editável
+    chat_display.configure(state=tk.NORMAL)  
     chat_display.insert(tk.END, f"You - {user_input}\n")
     
     response = get_bot_response(user_input)
     chat_display.insert(tk.END, f"Shoga - {response}\n")
-    chat_display.configure(state=tk.DISABLED)  # Bloqueia o chat display novamente
-    user_input_entry.delete(0, tk.END)  # Limpar a entrada de usuário
+    chat_display.configure(state=tk.DISABLED)  
+    user_input_entry.delete(0, tk.END)  
 
 root = tk.Tk()
 root.title("Shoga - Chatbot")
@@ -88,13 +88,13 @@ root.geometry('600x435')
 root.resizable(True, True)
 root.minsize(width = 400, height = 435)
 
-chat_display = scrolledtext.ScrolledText(root, wrap=tk.WORD, state=tk.DISABLED)  ## Inicialmente bloqueado
+chat_display = scrolledtext.ScrolledText(root, wrap=tk.WORD, state=tk.DISABLED) 
 chat_display.pack(fill=tk.BOTH, expand=True)
 '''chat_display.configure(background = '') Alterar o fundo do chat'''
 
 user_input_entry = tk.Entry(root)
 user_input_entry.pack(fill=tk.X, pady=1)
-user_input_entry.bind("<Return>", send_message)  ## Associa a função à tecla "Enter"
+user_input_entry.bind("<Return>", send_message)  
 
 send_button = tk.Button(root, text="Send", command=send_message)
 send_button.pack()
