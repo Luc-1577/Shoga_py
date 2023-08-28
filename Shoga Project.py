@@ -65,6 +65,8 @@ def get_bot_response(user_input):
     elif "open" in user_input.lower():
         user_input = get_site_name(user_input)
         return open_site()
+    elif "exit" in user_input.lower():
+        return 'Bye ^^'
     else:
         return "I don't know if I can do that, please type \"--help\" to see the commands"
 
@@ -80,7 +82,6 @@ def send_message(event=None):
     user_input_entry.delete(0, tk.END)  
 
     if "exit" in user_input.lower():
-        chat_display.insert(tk.END, "Shoga - Bye ^^")
         chat_display.configure(state=tk.DISABLED)
         user_input_entry.config(state=tk.DISABLED)
         send_button.config(state=tk.DISABLED)
