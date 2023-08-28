@@ -47,14 +47,14 @@ def open_gpt():
 
 
 def help():
-    command = """\"What time is it?\" = Shows time
+    command = """\"time" = Shows time
 \"Date\" = Shows what day is today
 \"Exit\" = End the chat
 \"Open (site name)\" = Open site"""
     return command
 
 def get_bot_response(user_input):
-    if "what time is it" in user_input.lower():
+    if "time" in user_input.lower():
         return get_current_time()
     elif "date" in user_input.lower():
         return get_current_date()
@@ -65,8 +65,6 @@ def get_bot_response(user_input):
     elif "open" in user_input.lower():
         user_input = get_site_name(user_input)
         return open_site()
-    elif "exit()" in user_input.lower():
-        return "Bye ^^"
     else:
         return "I don't know if I can do that, please type \"--help\" to see the commands"
 
@@ -80,6 +78,13 @@ def send_message(event=None):
     chat_display.insert(tk.END, f"Shoga - {response}\n")
     chat_display.configure(state=tk.DISABLED)  
     user_input_entry.delete(0, tk.END)  
+
+    if "exit" in user_input.lower():
+        chat_display.insert(tk.END, "Shoga - Bye ^^")
+        chat_display.configure(state=tk.DISABLED)
+        user_input_entry.config(state=tk.DISABLED)
+        send_button.config(state=tk.DISABLED)
+        root.after(1500, root.destroy)
 
 root = tk.Tk()
 root.title("Shoga - Chatbot")
