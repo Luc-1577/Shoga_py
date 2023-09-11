@@ -8,14 +8,13 @@ Shoga is a simple chatbot built using the Tkinter library in Python. It provides
 - Displaying the current date.
 - Opening websites based on user input.
 - Providing a help message that explains available commands.
-- Opening the OpenAI GPT-3.5 Playground website.
 
 ## Requirements
 
 To run the Shoga chatbot, you need to have the following installed:
 
 - Python 3.x
-- Tkinter library
+- customtkinter library
 - requests library (for website checking)
 - webbrowser library (for opening websites)
 - datetime library
@@ -36,7 +35,7 @@ To run the Shoga chatbot, you need to have the following installed:
 
 ## Available Commands
 
-- "What time is it?" - Displays the current time.
+- "What time is it?" or "Time"- Displays the current time.
 - "Date" - Displays the current date.
 - "Exit" - Closes the chatbot.
 - "Open (site name)" - Opens the specified website in a web browser.
