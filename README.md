@@ -1,4 +1,4 @@
-# Shoga - Chatbot
+# Shoga - Bot
 
 Shoga is a simple chatbot built using the Tkinter library in Python. It provides basic functionalities like displaying the current time and date, opening websites, and interacting with the user.
 
