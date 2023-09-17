@@ -18,7 +18,7 @@ To run the Shoga chatbot, you need to have the following installed:
 - requests library (for website checking)
 - webbrowser library (for opening websites)
 - datetime library
-- calculator library (Available in the file calculator.py)
+- calculator library (Available in the file Calculator.py)
 
 ## Usage
 
