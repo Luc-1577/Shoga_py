@@ -1,6 +1,6 @@
 # Shoga - Bot
 
-Shoga is a simple chatbot built using the Tkinter library in Python. It provides basic functionalities like displaying the current time and date, opening websites, and interacting with the user.
+Shoga is a simple bot built using the CustomTkinter library in Python. It provides basic functionalities like displaying the current time and date, opening websites, and solving simple math problems.
 
 ## Features
 
@@ -11,7 +11,7 @@ Shoga is a simple chatbot built using the Tkinter library in Python. It provides
 
 ## Requirements
 
-To run the Shoga chatbot, you need to have the following installed:
+To run the Shoga Bot, you need to have the following installed:
 
 - Python 3.x
 - customtkinter library
@@ -29,7 +29,7 @@ To run the Shoga chatbot, you need to have the following installed:
 3. Run the chatbot script using the following command:
 
     ```bash
-    python "Shoga Project.py"
+    python "Shoga Bot.py"
     ```
 
 4. The chatbot GUI window will appear, allowing you to interact with Shoga.
@@ -42,6 +42,7 @@ To run the Shoga chatbot, you need to have the following installed:
 - "Open (site name)" - Opens the specified website in a web browser.
 - "--help" or "What can you do?" - Displays a list of available commands.
 - "Open ChatGPT" or "Open GPT" - Opens the OpenAI GPT-3.5 Playground website.
+- "Calculate numerical_expression" - Returns the result.
 
 ## Customization
 
@@ -54,7 +55,7 @@ You can customize the appearance and behavior of the chatbot by modifying the sc
 
 ## Contributors
 
-Shoga chatbot was developed by [Lucas Luan]
+Shoga Bot was developed by [Lucas Luan]
 
 ## Contact
 
