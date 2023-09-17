@@ -30,7 +30,7 @@ def open_site(site):
         response = requests.head(url)
         if response.status_code == 200:
             webbrowser.open(url)
-            
+            return "Ok ^^"
     except:
         pass
 
