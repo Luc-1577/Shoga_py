@@ -118,7 +118,7 @@ def send_message(event=None):
             root.after(1200, root.destroy)
 
 root = CTk.CTk()
-root.title("Shoga - Chatbot")
+root.title("Shoga Bot")
 CTk.set_appearance_mode("dark")
 root.geometry('600x435')
 root.resizable(True, True)
