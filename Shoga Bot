@@ -37,7 +37,8 @@ def open_site(site):
 def open_gpt():
     url = "https://chat.openai.com/"
     webbrowser.open(url)
-    
+    return "Ok"
+
 def pre_calculus(user_input):
     x = ''
     for _ in user_input:
@@ -86,13 +87,13 @@ def get_bot_response(user_input):
 def initial(event):
     now = datetime.datetime.now()
     current_time = now.strftime("%H")    
-    if '6' <= current_time < '12':
+    if '06' <= current_time < '12':
         greeting = 'Good morning.'
     elif '12' <= current_time < '18':
         greeting = 'Good afternoon.'
     elif '18' <= current_time > '0':
         greeting = 'Good evening.'
-    elif '0' <= current_time < '6':
+    elif '00' <= current_time < '06':
         greeting = 'Oh, you are awake (*_*)\n'
     
     chat_display.insert(CTk.END, f"Shoga - {greeting} How can I help you?\n")
